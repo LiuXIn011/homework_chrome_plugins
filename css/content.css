@@ -1,0 +1,10 @@
+.D-X-X-btn{
+  width: 100px;
+  height: 100px;
+  background-color: #999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 50%;
+}
