@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "demo",
-  "version": "1.0.1",
-  "description": "测试Chrome扩展demo",
+  "name": "专升本学霸插件",
+  "version": "2.0.0",
+  "description": "专升本学霸插件，兼容东华大学、上海大学继续教育学习平台",
   "icons": {
     "16": "img/icon.png",
     "48": "img/icon.png",
@@ -12,15 +12,19 @@
     "notifications",
     "declarativeContent",
     "contextMenus",
-    "https://www.baidu.com/*"
+    "https://sdjj.ct-edu.com.cn/learning/*",
+    "https://donghuacj.ct-edu.com.cn/learning/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.baidu.com/*"
+        "https://sdjj.ct-edu.com.cn/learning/*",
+        "https://donghuacj.ct-edu.com.cn/learning/*"
       ],
       "js": [
-        "js/content.js"
+        "js/content.js",
+        "js/selfTestData.js",
+        "js/axios.min.js"
       ],
       "css": [
         "css/content.css"
